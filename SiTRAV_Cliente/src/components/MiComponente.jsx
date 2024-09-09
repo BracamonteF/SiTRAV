@@ -5,7 +5,7 @@ const MiComponente = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get('http://tu-dominio.com/api/endpoint/')
+    axios.get('http://localhost/api/endpoint/')
       .then(response => {
         setData(response.data);
       })
